@@ -18,9 +18,11 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
-- task: UiPathDeploy@2
+- task: UiPathRunJob@2
   inputs:
     orchestratorConnection: 'UiPath Orchestrator Connection'
-    packagesPath: 'C:\Users\niranjan_mahtole\Desktop\Hello.World.Project.1.0.1.nupkg'
+    processName: 'HelloWorld'
     folderName: 'Shared'
-    entryPoints: 'Main.xaml'
+    jobType: 'NonProduction'
+    user: 'Niranjan Mahtole'
+    machine: 'ARPGL003273'
