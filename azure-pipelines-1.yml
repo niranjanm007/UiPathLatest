@@ -6,13 +6,9 @@
 trigger:
 - main
 
-
-
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+stages:
+  - stage: Build
+    displayName: Build Package
+    jobs:
+      - job: BuildPackage
+        pool: ARPGL003273
