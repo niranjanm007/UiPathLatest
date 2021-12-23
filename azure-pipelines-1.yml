@@ -11,4 +11,4 @@ stages:
     displayName: Build Package
     jobs:
       - job: BuildPackage
-        pool: Laptop-ARPGL003273
+        pool: Default
