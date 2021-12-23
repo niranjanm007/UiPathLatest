@@ -5,9 +5,3 @@
 # https://aka.ms/yaml
 
 
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-  jobs:
-  - job: BuildPackage
-    pool: ARPGL003273
