@@ -10,13 +10,3 @@ trigger:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
-
-
-- task: UiPathRunJob@2
-  inputs:
-    orchestratorConnection: 'UiPath Orchestrator Connection'
-    processName: 'HelloWorld'
-    folderName: 'Shared'
-    jobType: 'Unattended'
-    user: 'Niranjan Mahtole'
-    machine: 'ARPGL003273'
