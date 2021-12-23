@@ -23,6 +23,6 @@ steps:
     orchestratorConnection: 'UiPath Orchestrator Connection'
     processName: 'HelloWorld'
     folderName: 'Shared'
-    jobType: 'NonProduction'
+    jobType: 'Unattended'
     user: 'Niranjan Mahtole'
     machine: 'ARPGL003273'
