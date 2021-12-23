@@ -11,4 +11,4 @@ stages:
     displayName: Build Package
     jobs:
       - job: BuildPackage
-        pool: Hello World Project-Deployment Group
+        pool: Laptop-ARPGL003273
