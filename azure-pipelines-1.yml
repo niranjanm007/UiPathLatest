@@ -9,6 +9,4 @@ trigger:
 stages:
   - stage: Build
     displayName: Build Package
-    jobs:
-      - job: BuildPackage
-        pool: Default
+    pool: Default
