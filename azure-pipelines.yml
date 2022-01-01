@@ -1,4 +1,5 @@
 # Starter pipeline
+
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
@@ -16,5 +17,11 @@ steps:
     echo See https://aka.ms/yaml
     pool:default 
   displayName: 'Run a multi-line script'
-    
+
+- task: UiPathDeploy@2
+  inputs:
+    orchestratorConnection: 'UiPath Orchestrator Connection'
+    packagesPath: 'C:\Users\Niranjan\Desktop\Billingo.Invoice.Download.1.0.1-alpha.1.nupkg'
+    folderName: 'Shared'
+    entryPoints: 'Main.xaml'
 
