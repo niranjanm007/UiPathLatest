@@ -23,5 +23,5 @@ steps:
     orchestratorConnection: 'UiPath Orchestrator Connection'
     processName: 'HelloWorld'
     folderName: 'Shared'
-    user: 'Niranjan Mahtole'
+    user: 'niranjanmahtole@gmail.com'
     machine: 'ARPGL003273'
