@@ -21,7 +21,7 @@ steps:
 - task: UiPathRunJob@2
   inputs:
     orchestratorConnection: 'UiPath Orchestrator Connection'
-    processName: 'HelloWorld'
-    folderName: 'Shared'
-    user: 'niranjanmahtole@gmail.com'
+    processName: 'Hello World'
+    folderName: 'Test_CICD'
+    user: 'persistent\niranjan_mahtole'
     machine: 'ARPGL003273'
