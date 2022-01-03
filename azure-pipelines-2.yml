@@ -18,10 +18,9 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-- task: UiPathRunJob@2
+- task: UiPathDeploy@2
   inputs:
     orchestratorConnection: 'UiPath Orchestrator Connection'
-    processName: 'Hello World'
+    packagesPath: 'C:\Users\niranjan_mahtole\Desktop\PageLoading.1.0.1.nupkg'
     folderName: 'Test_CICD'
-    user: 'persistent\niranjan_mahtole'
-    machine: 'ARPGL003273'
+    entryPoints: 'Main.xaml'
